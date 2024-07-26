@@ -53,11 +53,8 @@ $ conda env remove --name weaver
      * *pf_vectors* are four momentum of particles used to calculate the pair-wise features used in Particle Transformer
      * *labels* list the labels of your sample when you want to train a classfication model
      * *observers* list the variables do not used to train the model while keep them in the files after testing
-     * *length* restrict the number of particle candidates within the jet
+     * *length* restrict the number of particle candidates within the jet. In proton-proton collision, the particles are sorted by the transver momentum, while in electron-positron collision, the particles are sorted by the energy. If the *length* is larger than the number of particles in the jet, the leading *length* particles are preserved. If the *length* is smaller than the number of particles in the jet, the program would add particles with all features equal to 0.
    * train_JetClass.sh: set the detailed input paths, predicted output path, and other hyper parameters   
-
-
-[[Paper]](https://arxiv.org/abs/1711.11586) [[Code]](implementations/bicyclegan/bicyclegan.py)
 
 
 
