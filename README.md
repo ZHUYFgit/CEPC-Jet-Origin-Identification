@@ -22,7 +22,13 @@ from generator to Jet Origin Identification (JOI)
  - If you choose fast simulation, the file makeNtuples.C contained in Fast_simulation directory illustrating how to get the data features used in Machine Learning (ML) model training.
 
 **Install Miniconda3, weaver, and ParticleNet**
- - Install Miniconda3, such as 
+ - Install Miniconda3, such as
+ ```
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-lnux-x86_64.sh
+$ chmod +x Miniconda3-latest-Linux-x86_64.sh
+$ ./Miniconda3-latest-Linux-x86_64.sh
+$ source env_conda.sh
+```
 
 
 [[Paper]](https://arxiv.org/abs/1711.11586) [[Code]](implementations/bicyclegan/bicyclegan.py)
