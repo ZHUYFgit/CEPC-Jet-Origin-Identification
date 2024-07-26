@@ -44,9 +44,9 @@ $ conda env remove --name weaver
 ```
 #### Install ParticleNet
  - Download ParticleNet and Particle Transformer from github  https://github.com/jet-universe/particle_transformer. Once your analysis use the code from ParticleNet or Particle Transformer, you need to cite the papers listed in https://github.com/jet-universe/particle_transformer.
- - The director of ParticleNet has several files.
-   * env.sh: set the input directories of samples in this file (export DATADIR_JetClass=)
-   * data/JetClass/JetClass_full.yaml:
+ - The director of ParticleNet (suppose that the directory name you downloaded is ParticleNet) has several files.
+   * ParticleNet/env.sh: set the input directories of samples in this file (export DATADIR_JetClass=)
+   * ParticleNet/data/JetClass/JetClass_full.yaml:
      * *new_variables* means you can construct new variables based on the variables stored in your generated root files
      * *Pt_points* has two variables used to calculate the distance between two particles in ParticleNet
      * *pf_features* are the features used in training the model
@@ -54,12 +54,14 @@ $ conda env remove --name weaver
      * *labels* list the labels of your sample when you want to train a classfication model
      * *observers* list the variables do not used to train the model while keep them in the files after testing
      * *length* restrict the number of particle candidates within the jet. In proton-proton collision, the particles are sorted by the transver momentum, while in electron-positron collision, the particles are sorted by the energy. If the *length* is larger than the number of particles in the jet, the leading *length* particles are preserved. If the *length* is smaller than the number of particles in the jet, the program would add particles with all features equal to 0.
-   * train_JetClass.sh: set the detailed input paths, predicted output path, and other hyper parameters   
+   * ParticleNet/train_JetClass.sh: set the detailed input paths, predicted output path, and other hyper parameters   
 
 
 #### ParticleNet Usage method
- - If you follow the above steps producing the fast simulation files with [[fast_simulation/makeNtuples.C]](fast_simulation/makeNtuples.C), which would extract features used in training the ML model, you can put the [[training/JetClass_M11.yaml]](training/JetClass_M11.yaml) into your data/JetClass and [[training/train_JetClass_M11.yaml]](training/train_JetClass_M11.yaml) into your downloaded ParticleNet directory.
+ - If you follow the above steps producing the fast simulation files and extract the data featurew with [[fast_simulation/makeNtuples.C]](fast_simulation/makeNtuples.C), you can put the [[training/JetClass_M11.yaml]](training/JetClass_M11.yaml) into your ParticleNet/data/JetClass and [[training/train_JetClass_M11.yaml]](training/train_JetClass_M11.yaml) into your directory ParticleNet.
  - Set the path and parameters in [[training/train_JetClass_M11.yaml]](training/train_JetClass_M11.yaml), then sh [[training/train_JetClass_M11.yaml]](training/train_JetClass_M11.yaml) PN full, where PN means the ParticleNet model and full means nothing in this example.
+ - You also can use sh [[training/train_JetClass_M11.yaml]](training/train_JetClass_M11.yaml) ParT full, where ParT means Particle Transformer Model.
+
 
 
 ## Acknowledgement
