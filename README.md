@@ -7,7 +7,7 @@ from generator to Jet Origin Identification (JOI)
  - Download madgraph from [http://madgraph.phys.ucl.ac.be](http://madgraph.phys.ucl.ac.be) and install it. And you need to install Pythia, ExRootAnalysis, and HEPTools inside the madgraph.
  - To plot the JOI matrix
    <p align="center">
-   <img src="figures/ConfusionMatrix.pdf" width="800"\>
+   <img src="figures/vvH240full_matrix.png" width="600"\>
    </p> 
 shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate the samples of e+e- -> ZH (Z->vv,H->bb/cc/uu/dd/ss/gg) with the center of mass energy of 240 GeV. Since the Standard Model can generate H->ss/uu/dd, you need to import model HEL_UFO when generate samples with madgraph.
 
