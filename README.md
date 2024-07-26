@@ -8,17 +8,17 @@ from generator to Jet Origin Identification (JOI)
  - To plot the JOI matrix shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate the samples of e+e- -> ZH (Z->vv,H->bb/cc/uu/dd/ss/gg) with the center of mass energy of 240 GeV. Since the Standard Model can generate H->ss/uu/dd, you need to import model HEL_UFO when generate samples with madgraph.
 
 ## Simulation
-### Full Simulation**
+#### Full Simulation**
  - If you can access the computing resource from Institute of High Energy Physics, Chinese Academy of Sciences, you can do full simulation with CEPC Software.
  - Welcome to join CEPC.
  - The directory [[full_simulation]](full_simulation) provides the code used to extract the features from the reconstructed files (with postfix slcio).
 
-### Fast Simulation**
+#### Fast Simulation**
  - Instead of full simulation, which need intensive computing resources, you can do fast simulation with Delphes.
  - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC](https://github.com/oiunun/Delphes_CEPC), unpack it and make.
  - The Delphes card designed for 4th detector version of CEPC is delphes_card_CEPC_4th.tcl contained in directory [[fast_simulation]](fast_simulation).
  - The directory of [[fast_simulation]](fast_simulation) has the following files.
- * subjob.sh reads the file run_delphes.sh and set the input file (hepmc or stdhep) path, output file path and card path.
+   * subjob.sh reads the file run_delphes.sh and set the input file (hepmc or stdhep) path, output file path and card path.
 
 **Prepare traing/validation/testing samples**
  - If you choose full simulation, you can get the reconstructed fills including the information of jets and reconstructed particles. Then you can get the data features, such as the four momentum, impact parameters, particle PIDs of particle candidates within the jet, and stored these features into thr root file. The directory of full simulation has two files illustrating how to get these features.
