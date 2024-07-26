@@ -57,6 +57,10 @@ $ conda env remove --name weaver
    * train_JetClass.sh: set the detailed input paths, predicted output path, and other hyper parameters   
 
 
+#### ParticleNet Usage method
+ - If you follow the above steps producing the fast simulation files with [[fast_simulation/makeNtuples.C]](fast_simulation/makeNtuples.C), which would extract features used in training the ML model, you can put the [[training/JetClass_M11.yaml]](training/JetClass_M11.yaml) into your data/JetClass and [[training/train_JetClass_M11.yaml]](training/train_JetClass_M11.yaml) into your downloaded ParticleNet directory.
+ - Set the path and parameters in [[training/train_JetClass_M11.yaml]](training/train_JetClass_M11.yaml), then sh [[training/train_JetClass_M11.yaml]](training/train_JetClass_M11.yaml) PN full, where PN means the ParticleNet model and full means nothing in this example.
+
 
 ## Acknowledgement
 
