@@ -41,7 +41,8 @@ $ pip install weaver-core
 ```
 $ conda env remove --name weaver
 ```
- - Download ParticleNet and Particle Transformer from github  
+ - Download ParticleNet and Particle Transformer from github  https://github.com/jet-universe/particle_transformer. Once your analysis use the code from ParticleNet or Particle Transformer, you need to cite the papers listed in https://github.com/jet-universe/particle_transformer.
+ - The director of ParticleNet has several files. Among these files, you need set the input directories of samples in the file named env.sh (export DATADIR_JetClass=), set the features you use to train the model in the file data/JetClass/JetClass_full.yaml, and set the detailed input paths, predicted output path, and other hyper parameters in file train_JetClass.sh. The file data/JetClass/JetClass_full.yaml has several key parameters, new_variables means you can construct new variables based on the variables stored in your generated root files, Pt_points has two variables used to calculate the distance between two particles in ParticleNet, pf_features are the features used in training the model, pf_vectors are four momentum of particles used to calculate the Lorentz Invariant variables used in Particle Transformer, labels list the labels of your sample when you want to train a classfication model, observers list the variables do not used to train the model while keep them in the files after testing, length restrict the particle candidates within a jet need to me exactly equal to "length".  
 
 
 [[Paper]](https://arxiv.org/abs/1711.11586) [[Code]](implementations/bicyclegan/bicyclegan.py)
