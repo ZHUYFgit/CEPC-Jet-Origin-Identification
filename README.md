@@ -14,8 +14,14 @@ from generator to Jet Origin Identification (JOI)
 **Fast Simulation**
  - Instead of full simulation, which need intensive computing resources, you can do fast simulation with Delphes.
  - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC](https://github.com/oiunun/Delphes_CEPC), unpack it and make.
- - The Delphes card designed for 4th detector version of CEPC is 
- - [model](mxnet/particle_net.py)
+ - The Delphes card designed for 4th detector version of CEPC is delphes_card_CEPC_4th.tcl contained in Fast_simulation.
+ - The directory of Fast_simulation has the following files: subjob.sh reads the file run_delphes.sh and set the input file (hepmc or stdhep) path, output file path and card path.
+
+**Prepare traing/validation/testing samples**
+ - If you choose full simulation, you can get the reconstructed fills including the information of jets and reconstructed particles. Then you can get the data features, such as the four momentum, impact parameters, particle PIDs of particle candidates within the jet, and stored these features into thr root file. The directory of full simulation has two files illustrating how to get these features.
+ - If you choose fast simulation, the file makeNtuples.C contained in Fast_simulation directory illustrating how to get the data features used in Machine Learning (ML) model training.
+
+**ML**
 
 
 **[New] Keras/TensorFlow implemetation** 
