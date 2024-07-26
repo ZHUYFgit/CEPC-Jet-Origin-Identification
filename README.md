@@ -47,6 +47,40 @@ $ conda env remove --name weaver
 
 [[Paper]](https://arxiv.org/abs/1711.11586) [[Code]](implementations/bicyclegan/bicyclegan.py)
 
+## Citations
+
+If you use the Particle Transformer code and/or the JetClass dataset, please cite:
+
+```
+@article{PhysRevLett.132.221802,
+  title = {Jet-Origin Identification and Its Application at an Electron-Positron Higgs Factory},
+  author = {Liang, Hao and Zhu, Yongfeng and Wang, Yuexin and Che, Yuzhi and Ruan, Manqi and Zhou, Chen and Qu, Huilin},
+  journal = {Phys. Rev. Lett.},
+  volume = {132},
+  issue = {22},
+  pages = {221802},
+  numpages = {8},
+  year = {2024},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.132.221802},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.132.221802}
+}
+
+
+@InProceedings{Qu:2022mxj,
+    author = "Qu, Huilin and Li, Congqiao and Qian, Sitian",
+    title = "{Particle Transformer} for Jet Tagging",
+    booktitle = "{Proceedings of the 39th International Conference on Machine Learning}",
+    pages = "18281--18292",
+    year = "2022",
+    eprint = "2202.03772",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph"
+}
+
+
+```
 
 ## Acknowledgement
 
