@@ -47,13 +47,13 @@ $ conda env remove --name weaver
  - The director of ParticleNet has several files.
    * env.sh: set the input directories of samples in this file (export DATADIR_JetClass=)
    * data/JetClass/JetClass_full.yaml:
-     * *new_variables means you can construct new variables based on the variables stored in your generated root files
-     * *Pt_points has two variables used to calculate the distance between two particles in ParticleNet
-     * *pf_features are the features used in training the model
-     * *pf_vectors are four momentum of particles used to calculate the pair-wise features used in Particle Transformer
-     * *labels list the labels of your sample when you want to train a classfication model
-     * *observers list the variables do not used to train the model while keep them in the files after testing
-     * *length restrict the number of particle candidates within the jet
+     * *new_variables* means you can construct new variables based on the variables stored in your generated root files
+     * *Pt_points* has two variables used to calculate the distance between two particles in ParticleNet
+     * *pf_features* are the features used in training the model
+     * *pf_vectors* are four momentum of particles used to calculate the pair-wise features used in Particle Transformer
+     * *labels* list the labels of your sample when you want to train a classfication model
+     * *observers* list the variables do not used to train the model while keep them in the files after testing
+     * *length* restrict the number of particle candidates within the jet
    * train_JetClass.sh: set the detailed input paths, predicted output path, and other hyper parameters   
 
 
