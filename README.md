@@ -8,24 +8,22 @@ from generator to Jet Origin Identification (JOI)
  - To plot the JOI matrix shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate the samples of e+e- -> ZH (Z->vv,H->bb/cc/uu/dd/ss/gg) with the center of mass energy of 240 GeV. Since the Standard Model can generate H->ss/uu/dd, you need to import model HEL_UFO when generate samples with madgraph.
 
 ## Simulation
-#### Full Simulation**
+#### Full Simulation
  - If you can access the computing resource from Institute of High Energy Physics, Chinese Academy of Sciences, you can do full simulation with CEPC Software.
  - Welcome to join CEPC.
  - The directory [[full_simulation]](full_simulation) provides the code used to extract the features from the reconstructed files (with postfix slcio).
 
-#### Fast Simulation**
+#### Fast Simulation
  - Instead of full simulation, which need intensive computing resources, you can do fast simulation with Delphes.
- - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC](https://github.com/oiunun/Delphes_CEPC), unpack it and make.
+ - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC](https://github.com/oiunun/Delphes_CEPC), unpack it and make. If you are operating in compuing 
  - The Delphes card designed for 4th detector version of CEPC is delphes_card_CEPC_4th.tcl contained in directory [[fast_simulation]](fast_simulation).
  - The directory of [[fast_simulation]](fast_simulation) has the following files.
-   * subjob.sh reads the file run_delphes.sh and set the input file (hepmc or stdhep) path, output file path and card path.
+   * subjob.sh reads the file run_delphes.sh and set the input file (hepmc or stdhep) path, output file path, and card path.
+   * makeNtuples.C illustrats how to get the data features used in model training.
 
-**Prepare traing/validation/testing samples**
- - If you choose full simulation, you can get the reconstructed fills including the information of jets and reconstructed particles. Then you can get the data features, such as the four momentum, impact parameters, particle PIDs of particle candidates within the jet, and stored these features into thr root file. The directory of full simulation has two files illustrating how to get these features.
- - If you choose fast simulation, the file makeNtuples.C contained in Fast_simulation directory illustrating how to get the data features used in Machine Learning (ML) model training.
 
-**Install Miniconda3, weaver, and ParticleNet**
- - Install Miniconda3, such as the following commands. You need to change the path in env_conda.sh to your installed miniconda3 path.
+## Install Miniconda3, weaver, and ParticleNet
+ - Install Miniconda3 according to your OS, such as you can install it with the following commands. You need to change the path in env_conda.sh to your installed miniconda3 path.
  ```
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-lnux-x86_64.sh
 $ chmod +x Miniconda3-latest-Linux-x86_64.sh
@@ -44,8 +42,19 @@ $ pip install weaver-core
 ```
 $ conda env remove --name weaver
 ```
+#### Install ParticleNet
  - Download ParticleNet and Particle Transformer from github  https://github.com/jet-universe/particle_transformer. Once your analysis use the code from ParticleNet or Particle Transformer, you need to cite the papers listed in https://github.com/jet-universe/particle_transformer.
- - The director of ParticleNet has several files. Among these files, you need set the input directories of samples in the file named env.sh (export DATADIR_JetClass=), set the features you use to train the model in the file data/JetClass/JetClass_full.yaml, and set the detailed input paths, predicted output path, and other hyper parameters in file train_JetClass.sh. The file data/JetClass/JetClass_full.yaml has several key parameters, new_variables means you can construct new variables based on the variables stored in your generated root files, Pt_points has two variables used to calculate the distance between two particles in ParticleNet, pf_features are the features used in training the model, pf_vectors are four momentum of particles used to calculate the Lorentz Invariant variables used in Particle Transformer, labels list the labels of your sample when you want to train a classfication model, observers list the variables do not used to train the model while keep them in the files after testing, length restrict the particle candidates within a jet need to me exactly equal to "length".  
+ - The director of ParticleNet has several files.
+   * env.sh: set the input directories of samples in this file (export DATADIR_JetClass=)
+   * data/JetClass/JetClass_full.yaml:
+     * *new_variables means you can construct new variables based on the variables stored in your generated root files
+     * *Pt_points has two variables used to calculate the distance between two particles in ParticleNet
+     * *pf_features are the features used in training the model
+     * *pf_vectors are four momentum of particles used to calculate the pair-wise features used in Particle Transformer
+     * *labels list the labels of your sample when you want to train a classfication model
+     * *observers list the variables do not used to train the model while keep them in the files after testing
+     * *length restrict the number of particle candidates within the jet
+   * train_JetClass.sh: set the detailed input paths, predicted output path, and other hyper parameters   
 
 
 [[Paper]](https://arxiv.org/abs/1711.11586) [[Code]](implementations/bicyclegan/bicyclegan.py)
