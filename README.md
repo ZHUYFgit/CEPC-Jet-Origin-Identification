@@ -5,11 +5,7 @@ from generator to Jet Origin Identification (JOI)
 
 **Generator**
  - Download madgraph from [http://madgraph.phys.ucl.ac.be](http://madgraph.phys.ucl.ac.be) and install it. And you need to install Pythia, ExRootAnalysis, and HEPTools inside the madgraph.
- - To plot the JOI matrix
-   <p align="center">
-   <img src="figures/ConfusionMatrix.png" width="600"\>
-   </p> 
-shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate the samples of e+e- -> ZH (Z->vv,H->bb/cc/uu/dd/ss/gg) with the center of mass energy of 240 GeV. Since the Standard Model can generate H->ss/uu/dd, you need to import model HEL_UFO when generate samples with madgraph.
+ - To plot the JOI matrix shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate the samples of e+e- -> ZH (Z->vv,H->bb/cc/uu/dd/ss/gg) with the center of mass energy of 240 GeV. Since the Standard Model can generate H->ss/uu/dd, you need to import model HEL_UFO when generate samples with madgraph.
 
 **Full Simulation**
  - If you can access the computing resource from Institute of High Energy Physics, Chinese Academy of Sciences, you can do full simulation with CEPC Software.
@@ -25,7 +21,8 @@ shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](
  - If you choose full simulation, you can get the reconstructed fills including the information of jets and reconstructed particles. Then you can get the data features, such as the four momentum, impact parameters, particle PIDs of particle candidates within the jet, and stored these features into thr root file. The directory of full simulation has two files illustrating how to get these features.
  - If you choose fast simulation, the file makeNtuples.C contained in Fast_simulation directory illustrating how to get the data features used in Machine Learning (ML) model training.
 
-**ML**
+**Install Miniconda3, weaver, and ParticleNet**
+ - Install Miniconda3, such as 
 
 
 [[Paper]](https://arxiv.org/abs/1711.11586) [[Code]](implementations/bicyclegan/bicyclegan.py)
