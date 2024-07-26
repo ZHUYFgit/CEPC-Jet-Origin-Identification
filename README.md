@@ -64,4 +64,4 @@ $ conda env remove --name weaver
 
 ## Acknowledgement
 
-We thank Huilin Qu and Congqiao Li for invaluable support in utilizing ParticleNet and Particle Transformer. We extend our appreciation to the Shudong Wang and Xu Gao for supporing the guidance in Delphes, and Sitian Qian and Ze Guan for supporing in Herwig.
+We extend our heartfelt thanks to Huilin Qu and Congqiao Li for their invaluable support in utilizing ParticleNet and Particle Transformer. Our gratitude also goes to Shudong Wang and Xu Gao for their guidance in Delphes, as well as to Sitian Qian and Ze Guan for their support with Herwig.
