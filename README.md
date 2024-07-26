@@ -22,13 +22,26 @@ from generator to Jet Origin Identification (JOI)
  - If you choose fast simulation, the file makeNtuples.C contained in Fast_simulation directory illustrating how to get the data features used in Machine Learning (ML) model training.
 
 **Install Miniconda3, weaver, and ParticleNet**
- - Install Miniconda3, such as
+ - Install Miniconda3, such as the following commands. You need to change the path in env_conda.sh to your installed miniconda3 path.
  ```
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-lnux-x86_64.sh
 $ chmod +x Miniconda3-latest-Linux-x86_64.sh
 $ ./Miniconda3-latest-Linux-x86_64.sh
 $ source env_conda.sh
+$ conda config --set auto_activate_base false
 ```
+ - Create a virtual environment, activate the created environment, install pytorch (according to ou OS/CUDA version at [https://pytorch.org/get-started](https://pytorch.org/get-started)) and weaver with the following commands. 
+```
+$ conda create -n weaver python=3.10
+$ conda activate weaver
+$ conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
+$ pip install weaver-core
+```
+ - Once you do something wrong with weaver env, you can delete the env with the following command and recreate the env with the above commands.
+```
+$ conda env remove --name weaver
+```
+ - Download ParticleNet and Particle Transformer from github  
 
 
 [[Paper]](https://arxiv.org/abs/1711.11586) [[Code]](implementations/bicyclegan/bicyclegan.py)
