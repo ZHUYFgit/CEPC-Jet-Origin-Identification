@@ -13,7 +13,8 @@ from generator to Jet Origin Identification (JOI)
 
 **Fast Simulation**
  - Instead of full simulation, which need intensive computing resources, you can do fast simulation with Delphes.
- - 
+ - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC](https://github.com/oiunun/Delphes_CEPC), unpack it and make.
+ - The Delphes card designed for 4th detector version of CEPC is 
  - [model](mxnet/particle_net.py)
 
 
