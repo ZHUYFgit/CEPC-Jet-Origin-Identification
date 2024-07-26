@@ -1,4 +1,4 @@
-# CEPC_PN-ParT_procedure
+# CEPC-Jet-Origin-Identification
 from generator to Jet Origin Identification (JOI)
 
 ------
