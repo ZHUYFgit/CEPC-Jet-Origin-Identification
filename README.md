@@ -4,8 +4,9 @@ from generator to Jet Origin Identification (JOI)
 ------
 
 ## Generator
- - Download madgraph from [http://madgraph.phys.ucl.ac.be](http://madgraph.phys.ucl.ac.be) and install it. And you need to install Pythia, ExRootAnalysis, and HEPTools inside the madgraph.
+ - Download madgraph from [http://madgraph.phys.ucl.ac.be](http://madgraph.phys.ucl.ac.be) and install it. And you need to install Pythia, ExRootAnalysis, and hepmc inside the madgraph.
  - To plot the JOI matrix shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate the samples of e+e- -> ZH (Z->vv,H->bb/cc/uu/dd/ss/gg) with the center of mass energy of 240 GeV. Since the Standard Model can not generate H->ss/uu/dd, you need to import model HEL_UFO when generate samples with madgraph.
+After launch madgraph, type import model HEL_UFO, then madgraph would automatically download this model and give back a command, you need to type this command.
 
 ## Simulation
 #### Full Simulation
@@ -15,7 +16,7 @@ from generator to Jet Origin Identification (JOI)
 
 #### Fast Simulation
  - Instead of full simulation, which need intensive computing resources, you can do fast simulation with Delphes.
- - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC](https://github.com/oiunun/Delphes_CEPC), unpack it and make. If you are operating in compuing 
+ - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC/releases/tag/v1.0](https://github.com/oiunun/Delphes_CEPC/releases/tag/v1.0), unpack it and make. 
  - The Delphes card designed for 4th detector version of CEPC is delphes_card_CEPC_4th.tcl contained in directory [[fast_simulation]](fast_simulation).
  - The directory of [[fast_simulation]](fast_simulation) has the following files.
    * subjob.sh reads the file run_delphes.sh and set the input file (hepmc or stdhep) path, output file path, and card path.
@@ -29,7 +30,6 @@ $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-lnux-x86_64.sh
 $ chmod +x Miniconda3-latest-Linux-x86_64.sh
 $ ./Miniconda3-latest-Linux-x86_64.sh
 $ source env_conda.sh
-$ conda config --set auto_activate_base false
 ```
  - Create a virtual environment, activate the created environment, install pytorch (according to ou OS/CUDA version at [https://pytorch.org/get-started](https://pytorch.org/get-started)) and weaver with the following commands. 
 ```
