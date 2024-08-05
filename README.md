@@ -19,6 +19,7 @@ After launch madgraph, type import model HEL_UFO, then madgraph would automatica
  - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC/releases/tag/v1.0](https://github.com/oiunun/Delphes_CEPC/releases/tag/v1.0), unpack it and make. 
  - The Delphes card designed for 4th detector version of CEPC is delphes_card_CEPC_4th.tcl contained in directory [[fast_simulation]](fast_simulation).
  - The directory of [[fast_simulation]](fast_simulation) has the following files.
+   * setup.sh set the path of Delphes installed
    * subjob.sh reads the file run_delphes.sh and set the input file (hepmc or stdhep) path, output file path, and card path.
    * makeNtuples.C illustrats how to get the data features used in model training.
 
