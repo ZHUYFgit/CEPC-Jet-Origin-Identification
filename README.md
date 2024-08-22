@@ -59,7 +59,7 @@ $ conda env remove --name weaver
 
 
 #### ParticleNet Usage method
- - If you follow the above steps producing the fast simulation files and extract the data featurew with [[fast_simulation/makeNtuples.C]](fast_simulation/makeNtuples.C), you can put the [[training/JetClass_M11.yaml]](training/JetClass_M11.yaml) into your ParticleNet/data/JetClass and [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) into your directory ParticleNet. Inside the train_JetClass_M11.sh, there is a command used to source the conda environment, "source ~/env.sh", you need to set something according to your environment. 
+ - If you follow the above steps producing the fast simulation files and extract the data featurew with [[fast_simulation/makeNtuples.C]](fast_simulation/makeNtuples.C), you can put the [[training/JetClass_M11.yaml]](training/JetClass_M11.yaml) into your ParticleNet/data/JetClass and [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) into your directory ParticleNet. Inside the train_JetClass_M11.sh, there is a command used to source the conda environment, "source ~/env.sh", you need to change the path in env.sh according to your environment. 
  - Set the path and parameters in [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh), then sh [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) PN full, where PN means the ParticleNet model and full means nothing in this example.
  - You also can use sh [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) ParT full, where ParT means Particle Transformer Model.
 
