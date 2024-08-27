@@ -4,7 +4,7 @@ from generator to Jet Origin Identification (JOI)
 ------
 
 ## Basic
- - The following operations are based on the CEPC env, so you need to load the container of CEPC env with the following commands.
+ - If you work on the CEPC env of IHEP farm, you need to load the container of CEPC env with the following commands.
    * `export PATH=/cvmfs/container.ihep.ac.cn/bin:$PATH`
    * `hep_container shell CentOS7`
    * `export PATH=/cvmfs/common.ihep.ac.cn/software/hepjob/bin:$PATH`
