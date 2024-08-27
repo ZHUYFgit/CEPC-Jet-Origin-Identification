@@ -16,7 +16,7 @@ After launch madgraph, type import model HEL_UFO, then madgraph would automatica
 
 #### Fast Simulation
  - Instead of full simulation, which need intensive computing resources, you can do fast simulation with Delphes.
- - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC/releases/tag/v1.0](https://github.com/oiunun/Delphes_CEPC/releases/tag/v1.0), unpack it and make. 
+ - Download a special version of Delphes from [https://github.com/oiunun/Delphes_CEPC/releases/tag/v1.0](https://github.com/oiunun/Delphes_CEPC/releases/tag/v1.0) or from [https://pan.baidu.com/s/1_cwAH2Ewol985qx-uAPIdA?pwd=sig3](https://pan.baidu.com/s/1_cwAH2Ewol985qx-uAPIdA?pwd=sig3), unpack it and make. 
  - The Delphes card designed for 4th detector version of CEPC is delphes_card_CEPC_4th.tcl contained in directory [[fast_simulation]](fast_simulation).
  - The directory of [[fast_simulation]](fast_simulation) has the following files.
    * setup.sh set the path of Delphes installed
