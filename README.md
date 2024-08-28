@@ -33,7 +33,7 @@ After launch madgraph, type import model HEL_UFO, then madgraph would automatica
 ## Install Miniconda3, weaver, and ParticleNet
  - Install Miniconda3 according to your OS, such as you can install it with the following commands. You need to change the path in env_conda.sh to your installed miniconda3 path.
  ```
-$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-lnux-x86_64.sh
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-linux-x86_64.sh
 $ chmod +x Miniconda3-latest-Linux-x86_64.sh
 $ ./Miniconda3-latest-Linux-x86_64.sh
 $ source env_conda.sh
