@@ -10,7 +10,7 @@ from generator to Jet Origin Identification (JOI)
    * `export PATH=/cvmfs/common.ihep.ac.cn/software/hepjob/bin:$PATH`
 
 ## Generator
- - Download madgraph from [http://madgraph.phys.ucl.ac.be](http://madgraph.phys.ucl.ac.be) and install it. And you need to install Pythia, ExRootAnalysis, and hepmc inside the madgraph.
+ - Download madgraph from [http://madgraph.phys.ucl.ac.be](http://madgraph.phys.ucl.ac.be) and install it. And you need to install Pythia, ExRootAnalysis, and hepmc inside the madgraph. If pythia can not be used after installing, you can try `export PYTHIA8DATA="/cefs/higgs/zhuyf/workspace/madgraph/MG5_aMC_v2_9_18/HEPTools/pythia8/share/Pythia8/xmldoc"`, you need to change the path.
  - To plot the JOI matrix shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate the samples of e+e- -> ZH (Z->vv,H->bb/cc/uu/dd/ss/gg) with the center of mass energy of 240 GeV. Since the Standard Model can not generate H->ss/uu/dd, you need to import model HEL_UFO when generate samples with madgraph.
 After launch madgraph, type import model HEL_UFO, then madgraph would automatically download this model and give back a command, you need to type this command.
 
