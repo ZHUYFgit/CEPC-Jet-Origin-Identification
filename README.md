@@ -92,4 +92,4 @@ We extend our heartfelt thanks to Huilin Qu and Congqiao Li for their invaluable
 
 ## contact information
 
-If you have any technical questions, please contact me at zhuyf@ihep.ac.cn or zhuyongfeng@pku.edu.cn. For questions related to JOI or particle theories, please reach out to Manqi Ruan at manqi.ruan@ihep.ac.cn.
+If you have any questions, please feel free to contact me at zhuyf@ihep.ac.cn or zhuyongfeng@pku.edu.cn, or reach out to Manqi Ruan at manqi.ruan@ihep.ac.cn.
