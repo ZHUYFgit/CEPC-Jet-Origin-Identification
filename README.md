@@ -65,9 +65,12 @@ $ conda env remove --name weaver
 
 
 #### ParticleNet Usage method
- - If you follow the above steps producing the fast simulation files and extract the data featurew with [[fast_simulation/makeNtuples.C]](fast_simulation/makeNtuples.C), you can put the [[training/JetClass_M11.yaml]](training/JetClass_M11.yaml) into your ParticleNet/data/JetClass and [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) into your directory ParticleNet. Inside the train_JetClass_M11.sh, there is a command used to source the conda environment, "source ~/env.sh", you need to change the path in env.sh according to your environment. 
- - Set the path and parameters in [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh), then sh [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) PN full, where PN means the ParticleNet model and full means nothing in this example.
- - You also can use sh [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) ParT full, where ParT means Particle Transformer Model.
+ - After producing the fast simulation files and extracting the data features using [[fast_simulation/makeNtuples.C]](fast_simulation/makeNtuples.C), follow these steps:
+   * Place the file [[training/JetClass_M11.yaml]](training/JetClass_M11.yaml) into the ParticleNet/data/JetClass directory.
+   * Move [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) to your ParticleNet directory.
+   * Inside the train_JetClass_M11.sh, there is a command that sources the conda environment, "source ~/env.sh". You need to modify the path in env.sh to match the location of your environment. 
+   * Set the appropriate paths and parameters in [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh), and then run the following command: sh [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) PN full. Here, PN refers to the ParticleNet model, and full is a placeholder that has no specific meaning in this example.
+   * Alternatively, you can run: sh [[training/train_JetClass_M11.sh]](training/train_JetClass_M11.sh) ParT full, where ParT refers to the Particle Transformer model.
 
 
 
