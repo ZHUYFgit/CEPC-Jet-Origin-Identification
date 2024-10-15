@@ -4,6 +4,7 @@ from generator to Jet Origin Identification (JOI)
 ------
 
 ## Basic
+ - You can generate simulation samples yourself, or you can skip the generation and simulation steps by directly downloading the data for JOI from https://zenodo.org/records/13932450?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjM2MmE2YjNmLTVhMGQtNDA0Yi1hYjM5LTZjYmVjYzA2NTE3YiIsImRhdGEiOnt9LCJyYW5kb20iOiIzM2QwMjBiZWJjMjQ1ZGFiMDRjNzVlYzllNGNiOTMwMyJ9.abc0lS2g5LGKZCK0v6Qf_Y9smtu1VXxI2_BQzPry8eSiA-34X2-MoOuvfpGydplCxw7IGMd7DTe-xpuHc7jQvA. 
  - If you’re working in the CEPC environment on the IHEP farm, you can load the CEPC container environment using the following commands:
    * `export PATH=/cvmfs/container.ihep.ac.cn/bin:$PATH`
    * `hep_container shell CentOS7`
