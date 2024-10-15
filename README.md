@@ -16,8 +16,14 @@ After launching MadGraph, type the following command: import model HEL_UFO. MadG
 
 <div align="center">
 <img src="Display_nnHgg.png" alt="confusion matrix" width="600"/>
-<p> Figure 1: Event display of an $e^+e^-\rightarrow \nu\bar{\nu} H\rightarrow \nu\bar{\nu} gg$ ($\sqrt{s}$ = 240 GeV) event simulated and reconstructed with the CEPC baseline detector. Different particles are depicted with colored curves and straight lines.</p>
+<p> Figure 1: Event display of an e+e- -> vvHgg (center-of-mass energy of 240 GeV) event simulated and reconstructed with the CEPC baseline detector. Different particles are depicted with colored curves and straight lines.</p>
 </div>
+
+<div align="center">
+<img src="ConfusionMatrix.pdf" alt="confusion matrix" width="600"/>
+<p> Figure 2: The confusion matrix M11 for vvH, H -> jj events at 240 GeV center-of-mass energy. The matrix is normalized to unity for each truth label (row).</p>
+</div>
+
 
 ## Simulation
 #### Full Simulation
