@@ -20,7 +20,7 @@ After launching MadGraph, type the following command: import model HEL_UFO. MadG
 </div>
 
 <div align="center">
-<img src="ParT_matrix.png" alt="confusion matrix" width="600"/>
+<img src="PN_matrix.png" alt="confusion matrix" width="600"/>
 <p> Figure 2: The confusion matrix M11 for vvH, H -> jj events at 240 GeV center-of-mass energy. The matrix is normalized to unity for each truth label (row).</p>
 </div>
 
