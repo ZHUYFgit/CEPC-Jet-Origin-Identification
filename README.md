@@ -15,6 +15,7 @@ from generator to Jet Origin Identification (JOI)
 After launching MadGraph, type the following command: import model HEL_UFO. MadGraph will automatically download the model and return a command for you to run—simply execute the command it provides.
 
 <img src="Display_nnHgg.png" alt="confusion matrix" width="600"/>
+<p align="center"Figure 1: display</p>
 
 ## Simulation
 #### Full Simulation
