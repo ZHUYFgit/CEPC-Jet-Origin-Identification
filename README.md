@@ -90,4 +90,5 @@ $ conda env remove --name weaver
 
 We extend our heartfelt thanks to Huilin Qu and Congqiao Li for their invaluable support in utilizing ParticleNet and Particle Transformer. Our gratitude also goes to Shudong Wang and Xu Gao for their guidance in Delphes, as well as to Sitian Qian and Ze Guan for their support with Herwig.
 
-If you have any question, please contact me by zhuyongfeng@pku.edu.cn.
+If you have any techniqual questions, please contact me by zhuyf@ihep.ac.cn or zhuyongfeng@pku.edu.cn.
+If you have questions about particle theories, please contact Manqi Ruan by manqi.ruan@ihep.ac.cn.
