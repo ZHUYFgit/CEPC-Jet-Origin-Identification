@@ -16,7 +16,7 @@ After launching MadGraph, type the following command: import model HEL_UFO. MadG
 
 <div align="center">
 <img src="Display_nnHgg.png" alt="confusion matrix" width="600"/>
-<p> Figure 1: display</p>
+<p> Figure 1: Event display of an $e^+e^-\rightarrow \nu\bar{\nu} H\rightarrow \nu\bar{\nu} gg$ ($\sqrt{s}$ = 240 GeV) event simulated and reconstructed with the CEPC baseline detector. Different particles are depicted with colored curves and straight lines.</p>
 </div>
 
 ## Simulation
