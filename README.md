@@ -14,6 +14,8 @@ from generator to Jet Origin Identification (JOI)
  - To plot the JOI matrix as shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate samples for the process e+e- -> ZH (with Z -> νν and H -> bb/cc/uu/dd/ss/gg) at a center-of-mass energy of 240 GeV. Since the Standard Model does not support H -> ss/uu/dd decays, you will need to import the HEL_UFO model in MadGraph for these samples.
 After launching MadGraph, type the following command: import model HEL_UFO. MadGraph will automatically download the model and return a command for you to run—simply execute the command it provides.
 
+![confusion matrix](Display_nnHgg.png)
+
 ## Simulation
 #### Full Simulation
  - If you have access to the computing resources at the Institute of High Energy Physics, Chinese Academy of Sciences, you can perform full simulations using the CEPC Software.
