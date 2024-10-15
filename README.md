@@ -4,15 +4,15 @@ from generator to Jet Origin Identification (JOI)
 ------
 
 ## Basic
- - If you work on the CEPC env of IHEP farm, you need to load the container of CEPC env with the following commands.
+ - If you’re working in the CEPC environment on the IHEP farm, you can load the CEPC container environment using the following commands:
    * `export PATH=/cvmfs/container.ihep.ac.cn/bin:$PATH`
    * `hep_container shell CentOS7`
    * `export PATH=/cvmfs/common.ihep.ac.cn/software/hepjob/bin:$PATH`
 
 ## Generator
- - Download madgraph from [http://madgraph.phys.ucl.ac.be](http://madgraph.phys.ucl.ac.be) and install it. And you need to install Pythia, ExRootAnalysis, and hepmc inside the madgraph. If pythia can not be used after installing, you can try `export PYTHIA8DATA="/cefs/higgs/zhuyf/workspace/madgraph/MG5_aMC_v2_9_18/HEPTools/pythia8/share/Pythia8/xmldoc"`, you need to change the path.
- - To plot the JOI matrix shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate the samples of e+e- -> ZH (Z->vv,H->bb/cc/uu/dd/ss/gg) with the center of mass energy of 240 GeV. Since the Standard Model can not generate H->ss/uu/dd, you need to import model HEL_UFO when generate samples with madgraph.
-After launch madgraph, type import model HEL_UFO, then madgraph would automatically download this model and give back a command, you need to type this command.
+ - To download and install MadGraph, visit http://madgraph.phys.ucl.ac.be. Once installed, you will also need to install Pythia, ExRootAnalysis, and HepMC within MadGraph. If Pythia does not work after installation, you can try the following command to set the PYTHIA8DATA environment variable (adjust the path as needed): `export PYTHIA8DATA="/cefs/higgs/zhuyf/workspace/madgraph/MG5_aMC_v2_9_18/HEPTools/pythia8/share/Pythia8/xmldoc"`.
+ - To plot the JOI matrix as shown in [https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.221802), you need to generate samples for the process e+e- -> ZH (with Z -> νν and H -> bb/cc/uu/dd/ss/gg) at a center-of-mass energy of 240 GeV. Since the Standard Model does not support H -> ss/uu/dd decays, you will need to import the HEL_UFO model in MadGraph for these samples.
+After launching MadGraph, type the following command: import model HEL_UFO. MadGraph will automatically download the model and return a command for you to run—simply execute the command it provides.
 
 ## Simulation
 #### Full Simulation
